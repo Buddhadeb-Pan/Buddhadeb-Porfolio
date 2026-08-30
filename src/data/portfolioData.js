@@ -1,4 +1,8 @@
+const publicAsset = (path) =>
+    `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 export const personalInfo = {
+
     name: "Buddhadeb Pan",
     initials: "BP",
 
@@ -12,7 +16,7 @@ export const personalInfo = {
 
     linkedin: "https://www.linkedin.com/in/buddhadeb-pan-500069270",
 
-    resume: "/resume.pdf",
+    resume: publicAsset("resume.pdf"),
 };
 
 
@@ -689,7 +693,10 @@ export const internshipExperiences = [{
         credential: "Certificate of Completion + Letter of Recommendation",
 
         credentialAwarded: true,
-        certificateUrl: "/certificates/futureIntern-certificate.png",
+
+        certificateUrl: publicAsset(
+            "certificates/futureInterns-certificate.png"
+        ),
     },
 
     {
@@ -731,7 +738,9 @@ export const internshipExperiences = [{
 
         credentialAwarded: true,
 
-        certificateUrl: "/certificates/codeAlpha-certificate.png",
+        certificateUrl: publicAsset(
+            "certificates/codeAlpha-certificate.png"
+        ),
     },
 
     {
@@ -773,6 +782,8 @@ export const internshipExperiences = [{
 
         credentialAwarded: true,
 
-        certificateUrl: "/certificates/agnirath-certificate.jpeg",
+        certificateUrl: publicAsset(
+            "certificates/agnirath-certificate.jpeg"
+        ),
     },
 ];
