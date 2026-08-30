@@ -695,7 +695,7 @@ export const internshipExperiences = [{
         credentialAwarded: true,
 
         certificateUrl: publicAsset(
-            "certificates/futureInterns-certificate.png"
+            "certificates/futureIntern-certificate.png"
         ),
     },
 
